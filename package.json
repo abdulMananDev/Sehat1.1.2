@@ -1,7 +1,7 @@
 {
   "name": "sehat",
   "version": "1.1.1",
-  "description": "Universiy Project That I have no mood to work over as its stopping my growth",
+  "description": "Universiy Project --save-dev",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/style.scss css/style.css -w"
