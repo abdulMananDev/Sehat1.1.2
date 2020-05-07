@@ -1,0 +1,323 @@
+.center-utility {
+  text-align: center; }
+
+.bold {
+  font-weight: 1000; }
+
+.btn-primary {
+  background: white;
+  color: #f5c68d;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  margin: 3rem 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  word-spacing: 3px;
+  letter-spacing: 3px; }
+
+.btn:focus {
+  transform: translateY(2rem); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 3rem; }
+
+::selection {
+  background: #ffdfb7; }
+
+.heading {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.521), rgba(238, 238, 238, 0.705)); }
+  .heading-primary {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    font-size: 4.6rem;
+    background-image: linear-gradient(to right, #ffdfb7, #f5c68d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all .3s; }
+    .heading-primary:hover {
+      transform: scale(1.2);
+      letter-spacing: 1px;
+      text-shadow: 0rem 2rem 1.5rem rgba(19, 19, 19, 0.2); }
+
+.head:hover {
+  transform: scale(1.2);
+  letter-spacing: 1px;
+  text-shadow: 0rem 2rem 1.5rem rgba(19, 19, 19, 0.2); }
+
+.image_container {
+  position: relative;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.card-1 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 40rem;
+  border-radius: 3px;
+  padding: 3rem;
+  background-color: bisque; }
+  .card-1_text {
+    font-size: 2.5rem;
+    color: #131313;
+    letter-spacing: 2px;
+    font-weight: 100; }
+
+.card-2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 40rem;
+  border-radius: 3px;
+  padding: 3rem;
+  background-color: bisque; }
+  .card-2_text {
+    font-size: 2.5rem;
+    color: #131313;
+    letter-spacing: 2px;
+    font-weight: 100; }
+
+.card-3 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 40rem;
+  border-radius: 3px;
+  padding: 3rem;
+  background-color: bisque; }
+  .card-3_text {
+    font-size: 2.5rem;
+    color: #131313;
+    letter-spacing: 2px;
+    font-weight: 100; }
+
+.card-4 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 40rem;
+  border-radius: 3px;
+  padding: 3rem;
+  background-color: bisque; }
+  .card-4_text {
+    font-size: 2.5rem;
+    color: #131313;
+    letter-spacing: 2px;
+    font-weight: 100; }
+
+.section-appointment {
+  height: 90vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(238, 238, 238, 0.9));
+  background-size: cover;
+  background-position: top;
+  padding: 5rem 20rem;
+  margin-top: 3rem; }
+  .section-appointment_details {
+    margin: 5rem 3rem; }
+
+.email, .password {
+  min-width: 50rem;
+  padding: 2rem 4rem;
+  margin: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid #ffdfb7;
+  outline: none;
+  font-size: 2.2rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px; }
+
+input[type=text]::placeholder {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 4px;
+  outline: none;
+  color: #f5c68d; }
+
+.select {
+  font-family: "Lato",sans-serif;
+  color: #f5c68d;
+  padding: 1rem;
+  height: 6rem;
+  border: 1px solid #ffdfb7;
+  font-size: 2rem;
+  -webkit-appearence: button;
+  outline: none;
+  margin: 1.5rem 2rem;
+  border-radius: 5px;
+  letter-spacing: 3px; }
+
+textarea {
+  resize: none;
+  outline: none;
+  font-family: "Lato" , sans-serif;
+  font-size: 2.5rem;
+  margin: 1.5rem 2rem;
+  padding: 1rem 1rem;
+  border: 1px solid #ffdfb7;
+  letter-spacing: 3px; }
+
+textarea::placeholder {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 4px;
+  outline: none;
+  color: #f5c68d; }
+
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row; }
+
+.img_appointment {
+  height: 80rem;
+  width: 100rem;
+  flex-grow: 2; }
+
+.gender_btn {
+  width: 25%;
+  display: inline-block;
+  margin: 1rem 2rem;
+  font-family: "Lato", sans-serif;
+  color: #f5c68d;
+  letter-spacing: 2px;
+  font-size: 2.5rem; }
+
+.label_radio-male {
+  padding: 1rem;
+  position: relative; }
+
+.form_radio_male {
+  display: none; }
+
+.label_btn {
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid #f5c68d;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -2.85rem;
+  top: 1.2rem; }
+  .label_btn::after {
+    content: '';
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5c68d;
+    opacity: 0;
+    transition: opacity .2s; }
+
+.form_radio_male:checked ~ .label_radio-male .label_btn::after {
+  opacity: 1; }
+
+.card-1_svg {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.fa-calendar-check {
+  display: inline;
+  color: #fff;
+  font-size: 6rem; }
+
+.fa-fly {
+  display: inline;
+  color: #fff;
+  font-size: 6rem; }
+
+.fa-credit-card {
+  display: inline;
+  color: #fff;
+  font-size: 6rem; }
+
+.fa-user-nurse {
+  display: inline;
+  color: #fff;
+  font-size: 6rem; }
+
+nav {
+  position: relative;
+  background-color: rgba(238, 238, 238, 0.705);
+  padding: 2.5rem 1.2rem;
+  margin-bottom: 2rem; }
+
+.nav_user {
+  position: absolute;
+  right: 5%;
+  top: 30%; }
+
+.fa-user-shield {
+  margin-right: 1rem;
+  font-size: 3.2rem; }
+
+nav a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #f5c68d;
+  position: relative;
+  margin-left: 5rem;
+  overflow: hidden;
+  font-size: 2.5rem;
+  font-weight: 200;
+  transition: all .2s;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  cursor: pointer; }
+
+nav a:first-child {
+  margin-left: 1rem; }
+
+a:hover {
+  color: coral; }
+
+nav a::after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 100%;
+  width: 110%;
+  height: .2rem;
+  background: coral;
+  transition: all .2s;
+  opacity: 0; }
+
+nav a:hover::after {
+  left: 0;
+  opacity: 1; }

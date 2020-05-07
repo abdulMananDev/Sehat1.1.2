@@ -1,0 +1,17 @@
+.btn-primary{
+    background: white;
+    color: rgb(245, 198, 141);
+     font-family: "Lato", sans-serif;
+     font-size: 2rem;
+     margin:3rem 2rem;
+     padding: 2rem 2.5rem;
+     border-radius: 50px;
+     outline:none;
+    border: none;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+
+}
+.btn:focus{
+    transform: translateY(2rem);
+}

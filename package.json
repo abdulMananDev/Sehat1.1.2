@@ -1,0 +1,18 @@
+{
+  "name": "sehat",
+  "version": "1.1.1",
+  "description": "Universiy Project That I have no mood to work over as its stopping my growth",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "keywords": [
+    "Meta"
+  ],
+  "author": "Abdul Mannan Malik",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
