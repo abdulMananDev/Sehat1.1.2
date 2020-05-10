@@ -28,6 +28,52 @@ body{
 ::selection{
     background: #ffdfb7;
 }
+
+.side-nav{
+    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    top:50%;
+    left:.2%;
+
+    height: 100vh;
+
+}
+.fa-whatsapp{
+    display: inline-block;
+    color:rgb(250, 182, 158);
+    font-size: 3rem; 
+    margin-bottom:3rem;
+    transition: all .2s;
+    &:hover{
+        color: coral;
+    }
+}
+.fa-facebook-f{
+    position: absolute;
+    left: 8%;
+    display: inline-block;
+    color:rgb(250, 182, 158);
+    font-size: 3rem; 
+    margin-bottom:3rem;
+    transition: all .2s;
+    &:hover{
+        color: coral;
+    }
+}
+.fa-envelope-open{
+    display: inline-block;
+    color:rgb(250, 182, 158);
+    font-size: 3rem; 
+    margin-bottom:3rem;
+    transition: all .2s;
+    &:hover{
+        color: coral;
+    }
+    
+}
 .heading{
     position: relative;
     height:95vh;
@@ -184,7 +230,7 @@ body{
    
 }
 
-input[type=text]::placeholder{
+input::placeholder{
     font-size: 2rem;
     text-transform: capitalize;
     font-family: "Lato", sans-serif;
@@ -321,20 +367,28 @@ textarea::placeholder{
 }
 
 nav{
-    position: relative;
+    position: fixed;
+    top:0;
+    left: 3rem;
+    z-index: 500000;
+    width: 97%;
     background-color: rgba(238, 238, 238, 0.705);
     padding: 2.5rem 1.2rem;
     margin-bottom:2rem ;
   
    
 }
-
+.x:target{
+    opacity: 1;
+    visibility: visible;
+}
 .nav_user{
    position: absolute;
    right: 5%;
    top: 30%;
-
 }
+
+
 .fa-user-shield{
     
     margin-right: 1rem;
@@ -384,3 +438,160 @@ nav a:hover::after{
     left:0;
     opacity: 1;
 }
+
+.popup{
+    background-color: rgba(238, 238, 238, 0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    padding-top: 2rem;
+    z-index: 1000000000;
+    height: 100vh;
+    width: 100%;
+    opacity:0 ;
+    visibility: hidden;
+    transition: all .4s;
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+       
+    #popup_head{
+        transition: all .4s;
+    }
+    
+
+    
+    
+    &_content{
+        background-color: #fff;
+        width: 50rem;
+        box-shadow: 0 2rem 4rem 3rem rgba(238, 238, 238, .9);
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border-radius: 3px;
+        padding: 3.5rem 0;
+        overflow: hidden;;
+        
+
+    }
+
+        &_overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 17.5rem;
+            height: 100%;
+            border-radius: 3rem;
+            background-color:#ffdfb7;
+            transition: .5s;
+        }
+        
+        
+        &_btn-boxx{
+           
+            width:38rem;
+            margin: 5rem auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #ffdfb7;
+            border-radius: 3rem;
+            padding: 2rem 2rem;
+        }
+      
+
+        &_toggle-btn{
+        
+           
+            text-align: center;
+            font-family: "Lato", sans-serif;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            margin-left: 5rem;
+            outline: none;
+            position: relative;
+            color: #313131;
+
+        }
+        
+        &_ip-group{
+            
+            width: 40rem;
+            position: relative;
+            left: 16%;
+            transition: all .8s;
+            margin-top: 2.8rem;
+           
+        }
+            &_cross{
+                width: 5.5rem;
+                height: 5.5rem;
+                background: whitesmoke;
+                position: absolute;
+                top:1%;
+                right:2%;
+                border-radius: 100%;
+                text-align: center;
+                transition: all .5s;
+                &_close:link,
+                &_close:visited
+                {
+                 font-size: 5rem;
+                 text-decoration: none;
+                 display: inline-block;
+                 position: absolute;
+                 top:-24%;
+                 right: 24%;
+                 color: #313131;
+                 font-weight: 50;
+     
+                }
+            }
+          
+           &_cross:hover{
+              
+               background: #ffdfb7;
+           }
+
+        &_ip-field{
+            font-family: "Lato" , sans-serif;
+            width: 35rem;
+            padding: 2rem 3rem;
+            border-radius: 4px;
+            letter-spacing: 2.5px;
+            border: 1px solid #ffdfb7;
+            outline: none;
+            font-size: 2.5rem;
+            margin-bottom: 2.8rem;
+            margin-top: 2.5rem;
+            background: transparent;
+        }
+
+        &_btn{
+            padding:2.5rem 4rem;
+        }
+        &_btn-submit{
+            padding: 2.5rem 4rem;
+        }
+           
+        
+           
+    
+
+    
+   
+        #lab-admin{
+            position: absolute;
+            top: 29%;
+            left: 110%;
+        }
+    }
+    
+    .btn-primary{
+        border: 1px solid #ffdfb7 ;
+    
+    }

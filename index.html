@@ -12,27 +12,36 @@
    
     
     <nav>
-        <a href="">
+        <a href="#">
             <span>Home</span>
         </a>
-        <a href="">
+        <a href="#pop" class="x">
             <span>About Us</span>
         </a>
-        <a href="">
+        <a href="#services">
             <span>Our Services</span>
         </a>
-        <a href="">
+        <a href="#appointment">
             <span>Make an Appointment</span>
         </a>
+        
+            
+       
 
-       <div class="nav_user">
-        <a href=""><i class="fas fa-user-shield"></i>Secure Login</a>
+       <div class="nav_user" id="main_page">
+        <a href="#popup" class="nav_user-link"><i class="fas fa-user-shield"></i>Secure Login</a>
        </div>
 
     </nav>
+
+    <div class="side-nav">
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <!-- <a href=" "><i class="fas fa-envelope-open"></i></a> -->
+    </div>
     
 
-    <header class="heading">
+    <header class="heading" id="services">
         <div class="center-utility">
             <h1 class="heading-primary">Our services</h1>
         </div>
@@ -89,7 +98,7 @@
     </header>
 
 
-    <section class="section-appointment">
+    <section class="section-appointment" id="appointment">
         <div class="center-utility">
             <h2 class="heading-primary">
                 Make An Appointment
@@ -160,13 +169,72 @@
         </div>
     </section>
 
+    <section class="popup" id="popup">
+        
+         
+            
+            <div class="popup_content">
+                <div class="popup_cross" >
+                    <a href="#main_page" class="popup_cross_close">&times;</a>
+                </div>
+                <div class="center-utility">
+                    <h1 class="heading-primary" id="popup_head">User-Login</h1>
+                </div>
+                <div class="popup_btn-boxx">
+                    <div class="popup_overlay"></div>
+                    <button type="button" class="popup_toggle-btn margin-small" onclick="userEvent()">User</button>
+                    <button type="button" class="popup_toggle-btn padding-small" id="lab-btn" onclick="labEvent()">Lab- Admin</button>
+                </div>
+                
+                <form action="" class="popup_ip-group" id="user">
+                
+                   <input type="text" class="popup_ip-field" placeholder="Enter Mobile-No">
+                   
+                   <div class="popup_btn">
+                    <button class="btn-primary"type="submit">Generate OTP</button>
+                 </div>
+                    
+                    <input type="text" class="popup_ip-field" placeholder="Enter OTP">
 
+                    <div class="popup_btn-submit">
+                        <button type="submit" class="btn-secondary">Submit</button>
+                    </div>
+                     
+                </form>
+               
+                <form action="" class="popup_ip-group" id="lab-admin">
+
+                    <input type="text" class="popup_ip-field" placeholder="Enter Lab-Id">
+                    <input type="password" class="popup_ip-field" placeholder="Enter Password">
+                    <div class="popup_btn-submit">
+                     <button type="submit" class="btn-secondary">Submit</button>
+                    </div>
+                    
+                     
+                     
+
+                     
+                </form> 
+            </div>
+        </section>
 
     <script src="https://kit.fontawesome.com/d81b3be03f.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-    <script src="js/animate.js"></script>  
-</body>
-</html>
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
+    </body>
+    </html>
+                       
+                     
+                    
+                
+                    
+                    
+                        
+                        
+                
+
+           
