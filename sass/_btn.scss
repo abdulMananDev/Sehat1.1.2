@@ -10,12 +10,14 @@
     border: none;
     word-spacing: 3px;
     letter-spacing: 3px;
+    transition: all .2s;
 
 }
-.btn:focus{
+.btn:hover{
     transform: translateY(2rem);
 }
 .btn-secondary{
+    cursor: pointer;
     color: white;
     background: rgb(245, 198, 141);
      font-family: "Lato", sans-serif;

@@ -107,8 +107,8 @@
         <div class="grid">
             <div class="section-appointment_details">
                 <form action="/">
-                    <input type="text" name="mail" placeholder="enter email-id" class="email" >
-                    <input type="text" name="phone" placeholder="enter phone-no" class="password">
+                    <input type="text" name="mail" placeholder="enter email-id" class="email"  id="user_mail">
+                    <input type="text" name="phone" placeholder="enter phone-no" class="password" id="user_phNo">
                    <div class="drop">
                     <select class="select" id="selection">
                         <option value="" selected>Time</option>
@@ -186,15 +186,16 @@
                     <button type="button" class="popup_toggle-btn padding-small" id="lab-btn" onclick="labEvent()">Lab- Admin</button>
                 </div>
                 
-                <form action="" class="popup_ip-group" id="user">
+                <form action="/" class="popup_ip-group" id="user">
                 
-                   <input type="text" class="popup_ip-field" placeholder="Enter Mobile-No">
+                    <span class="cell_wrong span"></span>
+                   <input type="text" class="popup_ip-field" placeholder="Enter Mobile-No" id="popup_pno"><br>
                    
                    <div class="popup_btn">
                     <button class="btn-primary"type="submit">Generate OTP</button>
                  </div>
-                    
-                    <input type="text" class="popup_ip-field" placeholder="Enter OTP">
+                     <span class="otp_wrong span"></span>
+                    <input type="text" class="popup_ip-field" placeholder="Enter OTP" id="popup_otp">
 
                     <div class="popup_btn-submit">
                         <button type="submit" class="btn-secondary">Submit</button>
@@ -202,9 +203,9 @@
                      
                 </form>
                
-                <form action="" class="popup_ip-group" id="lab-admin">
-
-                    <input type="text" class="popup_ip-field" placeholder="Enter Lab-Id">
+                <form action="/" class="popup_ip-group" id="lab-admin">
+                    <span class="labId_wrong span"></span>
+                    <input type="text" class="popup_ip-field" placeholder="Enter Lab-Id" id="popup_labno">
                     <input type="password" class="popup_ip-field" placeholder="Enter Password">
                     <div class="popup_btn-submit">
                      <button type="submit" class="btn-secondary">Submit</button>
@@ -223,7 +224,7 @@
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-    <script src="js/animate.js"></script>
+     <script src="js/animate.js"></script>
     <script src="js/index.js"></script>
     </body>
     </html>
